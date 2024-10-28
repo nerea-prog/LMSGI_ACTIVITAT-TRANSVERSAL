@@ -1,9 +1,30 @@
-body{
+body {
     background-color: red;
     color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-
-header{
+header {
     background-color: red;
+}
+
+ul {
+    background-color: blue;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    color: #e74c3c;
 }
