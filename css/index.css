@@ -11,7 +11,7 @@ header {
 }
 
 ul {
-    background-color: blue;
+    background: linear-gradient(to bottom right, black, grey );
     padding: 20px;
     list-style: none;
     display: flex;
@@ -26,5 +26,11 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #e74c3c;
+    color: black;
+    background-color: red;
+
+}
+
+a:hover{
+    padding: 15px;
 }
