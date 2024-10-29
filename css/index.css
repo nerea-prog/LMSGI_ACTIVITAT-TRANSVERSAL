@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+
 }
 
 header {
@@ -23,6 +24,8 @@ ul li a {
     color: white;
     font-weight:bolder;
     font-size: 18px;
+    font-family: 'Catamaran',sans-serif;
+
 }
 
 ul li a:hover {
@@ -34,3 +37,40 @@ ul li a:hover {
 a:hover{
     padding: 15px;
 }
+
+
+@font-face{
+    font-family: 'Super Mario';
+    src: url(../fonts/chlorinap/CHLORINP.TTF) format('truetype');
+    font-family: 'Catamaran';
+    src: url(../fonts/catamaran/Catamaran.ttf) format('truetype');
+}
+
+#titulocabecera{
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
+.titulos{
+    font-family: 'Catamaran',sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+#presentacion{
+
+}
+#imagenpresentacion{
+    width: 50%;
+    height: 50%;
+}
+#parrafopresentacion{
+    position: absolute;
+    margin-left: 52%;
+    margin-top: 3%;
+    font-size: 30px; 
+}
+
