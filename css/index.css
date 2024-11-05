@@ -145,11 +145,10 @@ a:hover{
   .secciones{
     display: flex;
     flex-wrap: nowrap;
-    background-color: ;
   }
 
   .secciones div{
-    background-color: #;
+
     width: 10px;
     margin: 10px;
     text-align: center;
