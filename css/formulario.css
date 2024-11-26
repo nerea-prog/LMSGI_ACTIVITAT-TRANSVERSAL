@@ -1,0 +1,125 @@
+body {
+    background-color: red;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+
+}
+
+header {
+    background-color: red;
+}
+
+ul {
+    background: linear-gradient(to bottom right, black, grey );
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+    font-size: 18px;
+    font-family: 'Catamaran',sans-serif;
+
+}
+
+ul li a:hover {
+    color: black;
+    background-color: red;
+
+}
+
+a:hover{
+    padding: 15px;
+}
+
+
+@font-face{
+    font-family: 'Super Mario';
+    src: url(../fonts/chlorinap/CHLORINP.TTF) format('truetype');
+    font-family: 'Catamaran';
+    src: url(../fonts/catamaran/Catamaran.ttf) format('truetype');
+}
+
+#titulocabecera{
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .usuario{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.usuario input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.usuario label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.usuario span::before{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6C3483;
+    transition: .5s;
+}
+
+.usuario input:focus ~ label
+.usuario input:focus ~ label{
+    top: -5px;
+    color: #6C3483;
+}
+
+.usuario input:focus ~ span::before,
+.usuario input:focus ~ span::before{
+    width: 100%;
+}
+
