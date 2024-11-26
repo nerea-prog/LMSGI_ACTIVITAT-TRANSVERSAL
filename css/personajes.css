@@ -1,0 +1,66 @@
+body {
+    background-color: red;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: red;
+}
+
+ul {
+    background: linear-gradient(to bottom right, black, grey );
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+    font-size: 18px;
+    font-family: 'Catamaran',sans-serif;
+
+}
+
+ul li a:hover {
+    color: black;
+    background-color: red;
+
+}
+
+a:hover{
+    padding: 15px;
+}
+
+
+@font-face{
+    font-family: 'Super Mario';
+    src: url(../fonts/chlorinap/CHLORINP.TTF) format('truetype');
+    font-family: 'Catamaran';
+    src: url(../fonts/catamaran/Catamaran.ttf) format('truetype');
+}
+
+#titulocabecera{
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
+.titulos{
+    font-family: 'Catamaran',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+}
+img {
+    width: 300px;
+}
+div {
+    width: 60%;
+}
