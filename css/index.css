@@ -98,7 +98,6 @@ a:hover{
     transform: scaleX(0);
   }
   
-  /* Button 2 styles */
   
   .btn-2 a {
     color: #ffffff;
@@ -106,7 +105,7 @@ a:hover{
   }
   
   .btn-2 a:hover {
-    color: linear-gradient(to bottom right, black, grey );;
+    background: linear-gradient(to bottom right, black, grey );;
     transition: all 0.5s ease-in-out;
   }
   
@@ -144,10 +143,9 @@ a:hover{
 
   .articles {
     display: flex;
-    padding: 20px;
+    padding: 120px;
     width: 100%;
-    max-width: 800px;
-    margin-left: 22%;
+    max-width: 100%;
   }
   article {
     display: flex;
@@ -158,12 +156,14 @@ a:hover{
     color: white;
     font-family: "Roboto", sans-serif;
     text-align: center;
-    margin-left: 10%;
+    margin-left:2%;
+    height: 600px;
+    background : linear-gradient(to bottom right, #FF6347, #B22222);
   }
 
   article .imagenes {
     width: 100%;
-    height: 150px;
+    height: 300px;
     background-size: cover;
     background-position: center center;
   }
@@ -172,6 +172,145 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 50px;
+    font-size: 22px;
   }
+  .btn-3 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:  -12%;
+    margin-left: -3%;
+  }
+
+  .btn-3 a {
+    text-decoration: none;
+    border: 2px solid #010100;
+    padding: 15px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+
+.btn-3 a:hover::after {
+    transform: scaleX(0);
+  }
+  
+  
+  .btn-3 a {
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-3 a:hover {
+    background: linear-gradient(to bottom right, black, grey );;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-3 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+  
+  .btn-3 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+  .btn-3 a:hover::before {
+    transform: scaleY(0);
+  }
+  .btn-4 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:  -12%;
+    margin-left: 5%;
+  }
+
+  .btn-4 a {
+    text-decoration: none;
+    border: 2px solid #010100;
+    padding: 15px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+
+.btn-4 a:hover::after {
+    transform: scaleX(0);
+  }
+  
+  
+  .btn-4 a {
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-4 a:hover {
+    background: linear-gradient(to bottom right, black, grey );;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-4 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+  
+  .btn-4 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+  }
+  .btn-4 a:hover::before {
+    transform: scaleY(0);
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
   
