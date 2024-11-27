@@ -22,24 +22,27 @@
         </nav>
     </header>
 
-    <div class="formulario">
-        <h1>Inicio de sesión</h1>
-        <form method="post">
-            <div class="usuario">
-                <input type="text" required>
-                <label>Nombre de usuario</label>
-            </div>
-            <div class="contraseña">
-                <input type="password" required>
-                <label>Contraseña</label>
-            </div>
-            <div class="recordar">¿Olvidó su contraseña?</div>
-            <input type="submit" value="Iniciar">
-            <div class="registrarse">
-                Quiero hacer el <a href="#">registro</a>
-            </div>
-        </form>
 
-    </div>
+    <form action="gracias.html">
+        <h2>Contacto</h2> <br>
+        <div class="formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje" required></textarea>
+            <div class="form-txt">
+                <a href="#">Politica y privacidad</a>
+                <a href="#">Terminos y condiciones</a>
+            </div>
+            <input class="btn" type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <img id="MarioImagen" src="img/formulario/Imagenes-png-fondo-transparente-super-mario-the-movie(17).webp" alt="">
+    <img id="LuigiImagen" src="img/formulario/luigi.png" alt="">
 </body>
 </html>

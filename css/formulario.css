@@ -3,41 +3,65 @@ body {
     color: black;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 
 }
 
 header {
-    background-color: red;
+    background-color: red; 
+    width: 100%; 
+    padding: 5px 0; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5); 
 }
 
-ul {
-    background: linear-gradient(to bottom right, black, grey );
-    padding: 20px;
+#titulocabecera {
+    width: 25%; 
+    height: auto; 
+    margin-bottom: 5px;
+}
+
+nav.menu {
+    width: 100%;
+}
+
+nav ul {
+    background: linear-gradient(to bottom right, black, grey);
+    padding: 15px 0;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
+    margin: 0;
+    font-size: 20px;
 }
 
-ul li a {
+nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight:bolder;
-    font-size: 18px;
-    font-family: 'Catamaran',sans-serif;
-
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Catamaran', sans-serif;
+    padding: 10px 15px; 
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-ul li a:hover {
+nav ul li a:hover {
     color: black;
-    background-color: red;
-
+    background-color: white; 
 }
 
-a:hover{
-    padding: 15px;
-}
+
 
 
 @font-face{
@@ -54,72 +78,107 @@ a:hover{
     margin-right: 30%;
     margin-top: 2%;
 }
-.formulario{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: white;
-    border-radius: 10px;
-}
 
-.formulario h1{
+form{
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid silver;
-}
-
-.formulario form{
-    padding: 0 40px;
+    width: 340px;
+    background: linear-gradient(to bottom right, black, grey );
     box-sizing: border-box;
+    margin: 0;
 }
 
-form .usuario{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
+.formulario{
+    flex-direction: column;
+    gap: 15px;
 }
 
-.usuario input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
+h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+label{
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: black;
     outline: none;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.usuario label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
+textarea{
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: grey;
+}
+
+.form-text{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-text a{
+    color: red;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn{
     font-size: 16px;
-    pointer-events: none;
+    color: black;
+    border: 0;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
 }
 
-.usuario span::before{
-    content: '';
-    position: absolute;
-    top: 40%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #6C3483;
-    transition: .5s;
+.btn:hover{
+    background-color: grey;
 }
 
-.usuario input:focus ~ label
-.usuario input:focus ~ label{
-    top: -5px;
-    color: #6C3483;
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px;
+    }
 }
 
-.usuario input:focus ~ span::before,
-.usuario input:focus ~ span::before{
-    width: 100%;
+#MarioImagen{
+    width: 500px;
+    margin-left: 100px;
+
 }
 
+#LuigiImagen{
+    width: 500px;
+}
