@@ -301,7 +301,8 @@ a:hover{
   .btn-4 a:hover::before {
     transform: scaleY(0);
   }
-  footer {
+
+footer {
     background-color: #333;
     color: white;
     text-align: center;
