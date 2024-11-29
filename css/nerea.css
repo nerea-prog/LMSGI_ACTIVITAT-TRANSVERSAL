@@ -1,10 +1,16 @@
+*´{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: red;
     color: black;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+   min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,35 +85,111 @@ nav ul li a:hover {
     margin-top: 2%;
 }
 
-.persona {
-    margin: 150px auto;
-    max-width: 600px;
-    padding: 20px;
+.card{
+    position: relative;
+    width: 300px;
+    height: 500px;
     background: linear-gradient(to bottom right, black, grey);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 5%;
 }
 
-.fotopersona {
-    width: 150px;
-    height: 150px;
+.card:hover{
+    box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
+    transform: translate(-15px);
+}
+
+.card .head{
+    height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+.card .head .circle{
+    position: absolute;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    background: white;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.card .head .img{
+    z-index: 2;
+    width: 110px;
+    height: 115px;
+    position: absolute;
+    background: black;
+    padding: 5px;
+    border-radius: 50%;
+    top: -47%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card .head .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     object-fit: cover;
-    border: 3px solid red;
 }
 
-.biografiapersona h1 {
-    font-size: 24px;
+.card .description{
+    height: 200px;
+    padding: 20px;
+    border-bottom: solid 1px rgba(6, 74, 76, .18);
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.card .description h3{
     color: red;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.biografiapersona p {
-    font-size: 16px;
+.card .description h4{
+    color: rgb(255, 0, 0);
+    margin-top: 10px;
+    
+}
+
+.card .description p{
+    margin-top: 14px;
+    font-size: 15px;
     color: white;
-    line-height: 1.5;
+}
+
+.card .contact{
+    width: 100px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .contact a{
+    margin-top: 120px;
+    margin-left: 200px;
+    text-decoration: none;
+    color: #fff;
+    background: red;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.card .contact a:hover{
+    background: black;
 }
 
 footer {
