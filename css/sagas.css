@@ -86,7 +86,8 @@ nav ul li a:hover {
 .titulo_sagas {
     font-family: 'Super Mario', Arial, sans-serif;
     color: black;
-    font-size: 70px;
+    font-size: 3rem;
+    margin: -10px;
     margin-bottom: 30px;
 }
 
@@ -94,6 +95,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 5vw;
     gap: 20px;
 }
 
