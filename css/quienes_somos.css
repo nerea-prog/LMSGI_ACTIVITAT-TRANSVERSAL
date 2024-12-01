@@ -69,10 +69,11 @@ body {
 }
 
 #quienes-somos h2 {
-    font-size: 30px;
+    font-size: 3rem;
     color:black;
     margin-bottom: 20px;
-    margin-top: -20px;
+    margin-top: -15px;
+
 }
 
 #quienes-somos .contenido {
@@ -87,7 +88,7 @@ body {
 #quienes-somos p {
     font-size: 18px;
     line-height: 1.6;
-    color: black
+    color: white;
     margin-bottom: 20px;
 }
 
