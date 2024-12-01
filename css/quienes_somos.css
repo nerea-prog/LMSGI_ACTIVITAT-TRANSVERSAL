@@ -1,0 +1,106 @@
+body {
+    background-color: red;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  header {
+    background-color: red;
+  }
+  
+  ul {
+    background: linear-gradient(to bottom right, black, grey);
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Catamaran', sans-serif;
+  
+  }
+  
+  ul li a:hover {
+    color: black;
+    background-color: red;
+  
+  }
+  
+  a:hover {
+    padding: 15px;
+  }
+  
+  @font-face {
+    font-family: 'Super Mario';
+    src: url(../fonts/chlorinap/CHLORINP.TTF) format('truetype');
+    font-family: 'Catamaran';
+    src: url(../fonts/catamaran/Catamaran.ttf) format('truetype');
+  }
+  
+  #titulocabecera {
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+  }
+  
+.titulos {
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+  }
+
+  #quienes-somos {
+    background-color: red;
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#quienes-somos h2 {
+    font-size: 30px;
+    color:black;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+#quienes-somos .contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#quienes-somos p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black
+    margin-bottom: 20px;
+}
+
+#quienes-somos .imagenes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+#quienes-somos .imagenes img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+

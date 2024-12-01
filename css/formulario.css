@@ -84,24 +84,24 @@ form{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    width: 340px;
+    width: 30%;
     background: linear-gradient(to bottom right, black, grey );
     box-sizing: border-box;
-    margin: 0;
-    margin-top: 10%;
-    
+    margin-top: 3%; 
 }
 
 .formulario{
     flex-direction: column;
     gap: 15px;
+    margin-bottom: -20px;
+    margin-top: -50px;
 }
 
 h2{
     color: white;
     font-size: 35px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 label{
