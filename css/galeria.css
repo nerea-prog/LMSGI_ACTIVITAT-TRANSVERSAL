@@ -1,132 +1,131 @@
 body {
     background-color: red;
-    color: white;
+    color: black;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-  
-  }
-  
-  header {
-    background-color: red;
-  }
-  
-  ul {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: red; 
+    width: 100%; 
+    padding: 5px 0; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5); 
+}
+
+#titulocabecera {
+    width: 25%; 
+    height: auto; 
+    margin-bottom: 5px;
+}
+
+nav.menu {
+    width: 100%;
+}
+
+nav ul {
     background: linear-gradient(to bottom right, black, grey);
-    padding: 20px;
+    padding: 15px 0;
     list-style: none;
     display: flex;
-    justify-content: space-around;
-  }
-  
-  ul li a {
+    justify-content: space-around; 
+    margin: 0;
+    font-size: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bolder;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 22px;
     font-family: 'Catamaran', sans-serif;
-  
-  }
-  
-  ul li a:hover {
+    padding: 10px 15px; 
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+nav ul li a:hover {
     color: black;
-    background-color: red;
-  
-  }
-  
-  a:hover {
-    padding: 15px;
-  }
-  
-  @font-face {
+    background-color: white; 
+}
+
+
+
+
+@font-face{
     font-family: 'Super Mario';
     src: url(../fonts/chlorinap/CHLORINP.TTF) format('truetype');
     font-family: 'Catamaran';
     src: url(../fonts/catamaran/Catamaran.ttf) format('truetype');
-  }
-  
-  #titulocabecera {
+}
+
+#titulocabecera{
     width: 40%;
     height: 40%;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 2%;
-  }
-  
-.titulos {
-    font-family: 'Catamaran', sans-serif;
-    text-align: center;
-    font-size: 40px;
-    color: #000;
-  }
-
-.contenedor-videogaleria {
-    padding: 20px;
-    text-align: center;
 }
 
-.titulo_videogaleria {
-    font-size: 3rem;
-    color: black;
-    margin-bottom: 40px;
-    margin-top: 10px;
+.galeria{
+    padding: 16px;
+
 }
 
-.video-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 80px;
-}
-
-.video{
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 2%;
-    width: 300px;
-    padding: 10px;
-    text-align: center;
-}
-
-.video iframe {
+.imagen-principal img{
     width: 100%;
-    height: 180px;
-    border: none;
+    object-fit: cover;
     display: block;
 }
 
-
-.video h3 {
-    font-size: 18px;
-    color: black;
-    margin-top: 10px;
-}
-
-.video p {
-    font-size: 14px;
-    color: gray;
-    margin-top: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 10px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.lista-imagenes img{
     width: 100%;
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    display: block;
 }
 
-footer p {
+.lista-imagenes{
+    display: flex;
+    overflow-y: auto;
+    margin-top: 10px;   
+}
+
+.galeria2{
+    display: flex;
+    overflow-y: auto;
+    padding: 16px;
+}
+.card{
+    margin-right: 10px;
+    position: relative;
+}
+.cuerpo-card{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+.cuerpo-card h5, .cuerpo-card p{
     margin: 0;
-    text-align: center;
-    line-height: 1.5;
 }
-
+.card img{
+    width: 200px;
+    object-fit: cover;
+    height: 300px;
+}
