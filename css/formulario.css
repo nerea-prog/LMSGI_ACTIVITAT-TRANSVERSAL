@@ -82,12 +82,13 @@ nav ul li a:hover {
 form{
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     width: 30%;
     background: linear-gradient(to bottom right, black, grey );
     box-sizing: border-box;
-    margin-top: 3%; 
+    margin-top: 15%;
+    margin-bottom: 10%;
 }
 
 .formulario{
@@ -144,6 +145,30 @@ input::placeholder, textarea::placeholder{
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
+}
+.radio {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.labelradio{
+    font-size: 1rem;
+    margin-left: 50px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.labelradio{
+    font-size: 1rem;
+    margin-left: 50px;
 }
 
 .btn{

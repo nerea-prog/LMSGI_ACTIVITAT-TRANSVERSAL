@@ -80,7 +80,7 @@ nav ul li a:hover {
     padding: 25px 20px;
     background-color: red;
     text-align: center;
-    margin-top: 200px; /* Ajusta según la altura del header */
+    margin-top: 200px;
 }
 
 .titulo_sagas {
